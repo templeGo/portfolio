@@ -1,450 +1,64 @@
-*{
-    font-family: "A-OTF 新ゴ Pr6N R";
-}
-.clone_nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    transition: .3s;
-    transform: translateY(-100%);
+body
+{
+    background-color: #070610;
 }
 
-#header {
-    width: 100%;
-    height: 100px;
-    display: none;
+header
+{
+    display: flex;
+    justify-content: space-between;
 }
 
-#top {
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat
+header h1
+{
+    margin: 5% 0% 0% 10%;
+    color: #F0CE86;
 }
 
-#top_image_content {
-    /* height: 100vh; */
-}
-#top-container{
-  margin-top: 0px;
-  padding-top: 20px;
+.navigation
+{
+    transform: translate(5px,10px);
+    margin: 5% 10% 0% 0%;
 }
 
-#main_visual {
-    width: 100%;
-    height: auto;
-    opacity: 0.85;
-    display: block;
-}
-
-#main_smart_visual {
-    width: 330px;
-    height: auto;
-    opacity: 0.9;
-    display: none;
-}
-
-#hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.contents_value {}
-
-
-#buffer {
-    height: 200px;
-}
-
-#footer {
-    text-align: center;
-    background-color: rgba(26, 29, 38, 0.71);
-    padding: 10px;
-}
-#footer p{
-    font-family: Helvetica Neue Regular;
-}
-#footer_title {
-    display: inline;
-}
-
-.container {
-    /* 130, 39, 196, .2 */
-    /* 62, 17, 94, .25 */
-    background-color: rgb(130, 144, 229, .2);
-    margin: 20px auto;
-    padding: 40px;
-}
-
-::-webkit-full-page-media, _:future, :root .container {
-     background-color: rgb(130, 144, 229, .2);
-  }
-
-body{
-  background-color: black;
-}
-canvas {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-strong{
-    font-size: 15px;
-}
-h1 {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-}
-
-h3 {
-    color: white;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-tr:nth-child(odd) {
-    background-color: rgba(131, 145, 230, 0.2);
-}
-
-th {
-    width: 60px;
-}
-
-span {
-    color: white;
-}
-
-p {
-    font-size: 20px;
-    color: white;
-    margin: 5px;
-}
-strong{
-  font-size: 20px;
-}
-
-a {
-    color: white;
-    margin: 30px;
+.navigation a
+{
+    color: #F0CE86;
     text-decoration: none;
 }
 
-a:hover {
-    color: grey;
-    text-decoration: none;
+#work
+{
 }
 
-article {
+.item
+{
     text-align: center;
+    margin: 5% 0;
 }
 
-ul {
-    margin: 20px;
-    padding: 0;
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
-    display: inline;
-}
-
-#accessURL {
-    text-align: center;
-}
-
-.is-show {
-    transform: translateY(0);
-    background-color: rgba(26, 29, 38, 0.71);
-}
-
-.body-push-toleft {
-    left: -200px;
-}
-#footer a{
-
-}
-#canvas {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-}
-
-.contents_value{
-  margin-bottom: 40px;
-}
-
-.modal-overlay{
-  display: none;
-  position: fixed;
-  cursor:pointer;
-  top:0%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(26, 29, 38, 0.9);
-
-}
-
-#buckBottn{
-  position: fixed;
-  cursor:pointer;
-  right: 0;
-  bottom: 3%;
-  left: 0;
-  margin: auto;
-  z-index: 3;
-}
-.modal-contents{
-  z-index: 5;
-  display: block;
-  background-color: black;
-  position: fixed;
-  top: 10%;
-  bottom: 20%;
-  left: 20%;
-  right: 20%;
-  overflow: scroll;
-}
-
-#descriptionImg{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#description{
-  color:white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-}
-
-#image1 {
+img
+{
+    width: 50%;
     height: auto;
-    margin: 10px 0px;
 }
 
-#image2 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image3 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image4 {
-    height: auto;
-    margin: 10px 0px;
-}
-#image5 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image6 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image7 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image8 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image9 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image10 {
-    height: auto;
-    margin: 10px 0px;
-}
-
-#image11 {
-  height: auto;
-  margin: 10px 0px;
-}
-
-#image12 {
-  height: auto;
-  margin: 10px 0px;
-}
-
-#image13 {
-  height: auto;
-  margin: 10px 0px;
-}
-
-#modal-contents-1{
-  display: none;
-}
-
-#modal-contents-2{
-  display: none;
-}
-
-#modal-contents-3{
-  display: none;
-}
-
-#modal-contents-4{
-  display: none;
-}
-
-#modal-contents-5{
-  display: none;
-}
-
-#modal-contents-6{
-  display: none;
-}
-
-#modal-contents-7{
-  display: none;
-}
-
-#modal-contents-8{
-  display: none;
-}
-
-#modal-contents-9{
-  display: none;
-}
-
-#modal-contents-10{
-  display: none;
-}
-
-#modal-contents-11{
-  display: none;
-}
-
-#modal-contents-12{
-  display: none;
-}
-
-#modal-contents-13{
-  display: none;
-}
-
-@media (min-width: 1026px){
-  .modal-contents{
-    top: 5%;
-    bottom: 10%;
-  }
-
-  #main_visual{
-    display: block;
-  }
-  #main_smart_visual{
-    display: none;
-  }
-
-}
-
-@media (max-width: 1025px) {
-    #buffer {
-        height: 50px;
-    }
-    #top-container{
-      margin-top: 20px;
-      padding-top: 40px;
+@media (max-width: 767px)
+{
+    header
+    {
+        display: unset;
     }
 
-    #buckBottn{
-      bottom: 10%;
+    .navigation
+    {
+        transform: translate(0px,0px);
+        margin: 5% 0% 10% 10%;
     }
 
-    #main_visual{
-      display: block;
-    }
-    #main_smart_visual{
-      display: none;
-    }
-
-    iframe {
-        width: 425px;
-    }
-}
-
-@media (max-width: 767px) {
-    #buffer {
-        height: 50px;
-    }
-
-    .clone_nav a {
-        margin: 3px;
-        font-size: 10px;
-    }
-
-    iframe {
-        width: 295px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-    p{
-      font-size: 13px;
-    }
-    strong{
-      font-size: 15px;
-    }
-
-    #main_visual {
-        display: none;
-    }
-
-    #main_smart_visual {
-        display: block;
-    }
-
-    .modal-contents{
-      z-index: 5;
-      display: block;
-      background-color: black;
-      position: fixed;
-      top: 10%;
-      left: 10%;
-      right: 10%;
-      overflow: scroll;
-    }
-
-    #buckBottn{
-      bottom: 8%;
-    }
-
-    #descriptionImg{
-      margin: 30px 0px;
-    }
-
-    #description{
-      color:white;
-      margin: 30px 0px;
+    img
+    {
+        width: 80%;
+        height: auto;
     }
 }
