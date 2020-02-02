@@ -44,10 +44,13 @@ function displayAboutView()
     console.log("fs");
     let html = `<div>`;
     html += `<h2>about me</h2>`;
+    html += `<p>98年生まれ. 千葉大学在籍. UnityとTouchDesignerが得意. 楽天イーグルスを愛している.</p>`;
     html += `</div><div>`;
     html += `<h2>language</h2>`;
+    html += `<p>C# / C / processing / python / and other</p>`;
     html += `</div><div>`;
-    html += `<h2>about </h2>`;
+    html += `<h2>contact</h2>`;
+    html += `<a href="https://twitter.com/terami_fukami" target="_brank"></a>`;
     html += `</div>`;
     $("#work").html("");
     $("#about").html(html);
