@@ -24,13 +24,16 @@ function displayWorkView()
     html += `<img src="images/rakugaki.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/rakugaki2.jpg">`;
+    html += `<img src="images/tapin.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/aquarium.jpg">`;
+    html += `<img src="images/utvj.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
     html += `<img src="images/baten.jpg">`;
+    html += `</section />`;
+    html += `<section class="item">`;
+    html += `<img src="images/aquarium.jpg">`;
     html += `</section />`;
     $("#work").html(html);
     $("#about").html("");
