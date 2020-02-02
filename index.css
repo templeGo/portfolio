@@ -23,12 +23,9 @@ header h1
 
 .navigation a
 {
+    cursor: pointer;
     color: #F0CE86;
     text-decoration: none;
-}
-
-#work
-{
 }
 
 .item
@@ -41,6 +38,11 @@ img
 {
     width: 50%;
     height: auto;
+}
+
+#about h2
+{
+    color: #FFFFFF;
 }
 
 @media (max-width: 767px)

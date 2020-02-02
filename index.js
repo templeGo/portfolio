@@ -1,74 +1,45 @@
-// $(function() {
-//   var $win = $(window),
-//       $cloneNav = $('nav').clone().addClass('clone_nav').appendTo('body'),
-//       showClass = 'is-show';
+$(document).on('click','#worknav', function()
+{
+    displayWorkView();
+});
 
-//   $win.on('load scroll', function() {
-//     var value = $(this).scrollTop();
-//     if ( value > 500 ) {
-//       $cloneNav.addClass(showClass);
-//     } else {
-//       $cloneNav.removeClass(showClass);
-//     }
-//   });
-// });
+$(document).on('click','#aboutnav', function()
+{
+    displayAboutView();
+});
 
+function displayHeader()
+{
+    let html = `<h1>DAIKI TERAI</h1>`;
+    html += `<nav class="navigation">`;
+    html += `<a id="worknav" style="margin-right: 10px;">Works</a>`;
+    html += `<a id="aboutnav">About</a>`;
+    html += `</nav>`;
+    $("header").html(html);
+}
 
-// $(function() {
-//     $('[id^=image]').hover(function() {
-//         var imageid = $(this).attr('id');
+function displayWorkView()
+{
+    let html = `<section class="item">`;
+    html += `<img src="images/test.jpg">`;
+    html += `</section />`;
+    html += `<section class="item">`;
+    html += `<img src="images/test.jpg">`;
+    html += `</section />`;
+    $("#work").html(html);
+    $("#about").html("");
+}
 
-//         $('#'+imageid).css('-webkit-filter', 'grayscale(70%)');
-//         $('#'+imageid).css('filter', 'grayscale(70%)');
-//         $('#'+imageid).css('-webkit-transition', '.3s ease-in-out');
-//         $('#'+imageid).css('transition', '.3s ease-in-out');
-//     },
-//     function() {
-//         var imageid = $(this).attr('id');
-
-//         $('#'+imageid).css('-webkit-filter', 'grayscale(0)');
-//         $('#'+imageid).css('filter', 'grayscale(0)');
-//     })
-//   });
-
-// var value;
-// $(document).on('click', '[id^=image]', function() {
-//   value = $(this).attr('value');
-//   $('#modal-contents-' + value).css('display', 'block');
-//   $('.modal-overlay').hide().fadeIn(100);
-// });
-
-// $(document).on('click', '.modal-overlay', function() {
-//   $('#modal-contents-' + value).css('display', 'none');
-//   $('.modal-overlay').fadeOut(100);
-// });
-
-// $(document).ready(function(){
-//   $('a[href^="#"]').click(function() {
-//     //ページ内リンク先を取得
-//     var href= $(this).attr("href");
-//     //リンク先が#か空だったらhtmlに
-//     var hash = href == "#" || href == "" ? 'html' : href;
-//     //スクロール実行
-//     scrollToAnker(hash);
-//     return false;
-//   });
-
-//   // 指定したアンカー(#ID)へアニメーションでスクロール
-//   function scrollToAnker(hash) {
-//     var target = $(hash);
-//     var position = target.offset().top-100;
-//     console.log('position');
-//     $('body,html').stop().animate({scrollTop:position}, 1000);
-//   }
-// })
-
-// $(function(){
-//     $(window).on("load orientationchange resize", function() {
-
-// // TODO:あとでやる
-//         if(Math.abs(window.orientation) === 90) {
-//         } else {
-//         }
-//     });
-// });
+function displayAboutView()
+{
+    console.log("fs");
+    let html = `<div>`;
+    html += `<h2>about me</h2>`;
+    html += `</div><div>`;
+    html += `<h2>language</h2>`;
+    html += `</div><div>`;
+    html += `<h2>about </h2>`;
+    html += `</div>`;
+    $("#work").html("");
+    $("#about").html(html);
+}

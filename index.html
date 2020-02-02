@@ -6,28 +6,19 @@
     <link href="images/profile.jpg" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          displayHeader();
+          displayWorkView();
+      });
+    </script>
   </head>
   <body>
-    <header>
-      <h1>
-        DAIKI TERAI
-      </h1>
-      <nav class="navigation">
-        <a href="index.html" style="margin-right: 10px;">
-          Works
-        </a>
-        <a href="index.html">
-          About
-        </a>
-      </nav>
-    </header>
-    <div id="work">
-      <section class="item">
-        <img src="images/test.jpg">
-      </section>
-      <section class="item">
-        <img src="images/test.jpg">
-      </section>
-    </div>
+    <header></header>
+    <div id="about"></div>
+    <div id="work"></div>
   </body>
 </html>
