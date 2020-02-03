@@ -21,22 +21,23 @@ function displayHeader()
 function displayWorkView()
 {
     let html = `<section class="item">`;
-    html += `<img src="images/rakugaki.jpg">`;
+    html += `<img class="lazy" src="images/test.jpg" data-src="images/rakugaki.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/tapin.jpg">`;
+    html += `<img class="lazy" src="images/test.jpg" data-src="images/tapin.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/utvj.jpg">`;
+    html += `<img class="lazy" src="images/test.jpg" data-src="images/utvj.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/baten.jpg">`;
+    html += `<img class="lazy" src="images/test.jpg" data-src="images/baten.jpg">`;
     html += `</section />`;
     html += `<section class="item">`;
-    html += `<img src="images/aquarium.jpg">`;
+    html += `<img class="lazy" src="images/test.jpg" data-src="images/aquarium.jpg">`;
     html += `</section />`;
     $("#work").html(html);
     $("#about").html("");
+    $("img.lazy").lazyload();
 }
 
 function displayAboutView()
