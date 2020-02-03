@@ -30,15 +30,28 @@ header h1
 
 .item
 {
+    position: relative;
     text-align: center;
     margin: 5% 0;
 }
 
-img
+.item img
 {
     width: 50%;
     height: auto;
     box-shadow: 0 0 30px;
+    transition-duration: 0.3s;
+}
+
+.item img:hover
+{
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+
+.item p
+{
+    display: none;
 }
 
 #about div
@@ -100,7 +113,7 @@ img
         margin: 12% 0;
     }
 
-    img
+    .item img
     {
         width: 80%;
         height: auto;
