@@ -13,14 +13,52 @@
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
       $(function(){
-          displayHeader();
-          displayWorkView();
+          showWorkView();
+          $("img.lazy").lazyload();
       });
     </script>
   </head>
   <body>
-    <header></header>
-    <div id="about"></div>
-    <div id="work"></div>
+    <header>
+      <h1>DAIKI TERAI</h1>
+      <nav class="navigation">
+        <a id="worknav" style="margin-right: 10px;">Works</a>
+        <a id="aboutnav">About</a>
+      </nav>
+    </header>
+
+    <div id="about" style="display: none;">
+      <div>
+        <h2>about me</h2>
+        <p>98年生まれ. 千葉大学在籍. UnityとTouchDesignerが得意. 楽天イーグルスを愛している.</p>
+      </div>
+      <div>
+        <h2>language</h2>
+        <p>C# / C / processing / python / and other</p>
+      </div>
+      <div>
+        <h2>contact</h2>
+        <a href="https://twitter.com/terami_fukami" target="_brank"></a>
+      </div>
+      </div>
+    </div>
+
+    <div id="work">
+      <section class="item">
+        <img class="lazy" src="images/test.jpg" data-src="images/rakugaki.jpg">
+      </section>
+      <section class="item">
+        <img class="lazy" src="images/test.jpg" data-src="images/tapin.jpg">
+      </section>
+      <section class="item">
+        <img class="lazy" src="images/test.jpg" data-src="images/utvj.jpg">
+      </section>
+      <section class="item">
+        <img class="lazy" src="images/test.jpg" data-src="images/baten.jpg">
+      </section>
+      <section class="item">
+        <img class="lazy" src="images/test.jpg" data-src="images/aquarium.jpg">
+      </section>
+    </div>
   </body>
 </html>

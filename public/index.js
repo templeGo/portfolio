@@ -1,58 +1,21 @@
 $(document).on('click','#worknav', function()
 {
-    displayWorkView();
+    showWorkView();
 });
 
 $(document).on('click','#aboutnav', function()
 {
-    displayAboutView();
+    showAboutView();
 });
 
-function displayHeader()
+function showAboutView()
 {
-    let html = `<h1>DAIKI TERAI</h1>`;
-    html += `<nav class="navigation">`;
-    html += `<a id="worknav" style="margin-right: 10px;">Works</a>`;
-    html += `<a id="aboutnav">About</a>`;
-    html += `</nav>`;
-    $("header").html(html);
+    $("#about").show();
+    $("#work").hide();
 }
 
-function displayWorkView()
+function showWorkView()
 {
-    let html = `<section class="item">`;
-    html += `<img class="lazy" src="images/test.jpg" data-src="images/rakugaki.jpg">`;
-    html += `</section />`;
-    html += `<section class="item">`;
-    html += `<img class="lazy" src="images/test.jpg" data-src="images/tapin.jpg">`;
-    html += `</section />`;
-    html += `<section class="item">`;
-    html += `<img class="lazy" src="images/test.jpg" data-src="images/utvj.jpg">`;
-    html += `</section />`;
-    html += `<section class="item">`;
-    html += `<img class="lazy" src="images/test.jpg" data-src="images/baten.jpg">`;
-    html += `</section />`;
-    html += `<section class="item">`;
-    html += `<img class="lazy" src="images/test.jpg" data-src="images/aquarium.jpg">`;
-    html += `</section />`;
-    $("#work").html(html);
-    $("#about").html("");
-    $("img.lazy").lazyload();
-}
-
-function displayAboutView()
-{
-    console.log("fs");
-    let html = `<div>`;
-    html += `<h2>about me</h2>`;
-    html += `<p>98年生まれ. 千葉大学在籍. UnityとTouchDesignerが得意. 楽天イーグルスを愛している.</p>`;
-    html += `</div><div>`;
-    html += `<h2>language</h2>`;
-    html += `<p>C# / C / processing / python / and other</p>`;
-    html += `</div><div>`;
-    html += `<h2>contact</h2>`;
-    html += `<a href="https://twitter.com/terami_fukami" target="_brank"></a>`;
-    html += `</div>`;
-    $("#work").html("");
-    $("#about").html(html);
+    $("#about").hide();
+    $("#work").show();
 }
