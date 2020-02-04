@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>DAIKI TERAI</title>
+    <link href="images/profile.jpg" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="articles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script type="text/javascript" src="articles.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $("img.lazy").lazyload();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>DAIKI TERAI</h1>
+    </header>
+
+    <div id="work">
+      <div class="arti">
+        <img class="lazy" src="../images/test.jpg" data-src="../images/aquarium.jpg">
+        <p><a href="https://muto-rakugaki.firebaseapp.com/" target="_brank">https://muto-rakugaki.firebaseapp.com/</a></p>
+        <p>webで遊べるインタラクティブな個人制作.</p>
+        <p>こだわったポイントは３つ.</p>
+        <p>①状況に応じて行動を変える、同じ形態は二度とない生成的なものにする<br>
+        ②現実世界の生き物に似せた群衆行動をする<br>
+        ③マウスやキーボードで操作できる</p>
+        <p>遊び方</p>
+        <p>mouseClick:青増える<br>P:白増える<br>O:白減る<br>白はマウスを避ける</p>
+      </div>
+    </div>
+  </body>
+</html>

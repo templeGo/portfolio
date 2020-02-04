@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>DAIKI TERAI</title>
+    <link href="images/profile.jpg" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="articles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script type="text/javascript" src="articles.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $("img.lazy").lazyload();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>DAIKI TERAI</h1>
+    </header>
+
+    <div id="work">
+      <div class="arti">
+        <img class="lazy" src="../images/test.jpg" data-src="../images/baten.jpg">
+        <p><a href="http://bah-exhibition.utvirtual.tech/" target="_brank">http://bah-exhibition.utvirtual.tech/</a></p>
+        <p>東大VRサークルの体験型イベントの特設ホームページを作成.</p>
+        <p>こだわったポイントは特設ページとして必要最低限な情報を見やすく提示しながら、VRサークルらしくウェブに三次元の印象を与えたこと.</p>
+        <p>クリックで反応するインタラクティブで生成的なものにしたが、あくまで背景という役割を失わないように動作に制限をかけた.</p>
+      </div>
+    </div>
+  </body>
+</html>
