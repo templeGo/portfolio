@@ -35,7 +35,36 @@ header h1
     text-align: left;
     margin: 5% 10%;
     color: #FFFFFF;
+    font-size: 18px;
 }
+
+.insta {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .insta a::before {
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #333;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 44px; /* Button height */
+    line-height: 44px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 44px; /* Button width */
+  }
+  .insta a:hover::before {
+    color: #fff;
+  }
+  .insta a[href*="instagram.com"]::before      { content: "\f16d"; }
+  .insta a[href*="instagram.com"]:hover::before      { background-color: #222222; }
 
 @media (max-width: 767px)
 {
@@ -50,9 +79,24 @@ header h1
         margin: 12% 0;
     }
 
+    .arti p
+    {
+        text-align: left;
+        margin: 10% 10%;
+        color: #FFFFFF;
+        font-size: 11px;
+    }
+
     img
     {
         width: 80%;
         height: auto;
+    }
+
+    .insta a::before
+    {
+        height: 35px; /* Button height */
+        line-height: 35px; /* Button height */
+        width: 35px; /* Button width */
     }
 }

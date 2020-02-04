@@ -13,6 +13,7 @@ header h1
 {
     margin: 5% 0% 0% 10%;
     color: #F9C871;
+    cursor: pointer;
 }
 
 .navigation
@@ -116,7 +117,12 @@ header h1
     .item img
     {
         width: 80%;
-        height: auto;
+        transition-duration: unset;
+    }
+
+    .item img:hover
+    {
+        transform: unset;
     }
 
     #about div
