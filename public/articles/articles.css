@@ -2,7 +2,7 @@ body
 {
     background-color: #13111A;
     font-family: "Zen Old Mincho N M";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 header
@@ -40,6 +40,17 @@ header h1
     margin: 3% 10%;
     color: #FFFFFF;
     font-size: 15px;
+}
+
+.other
+{
+    margin: 8% 10%;
+    display: flex;
+}
+
+.other img
+{
+    width: 48%;
 }
 
 .insta {
