@@ -1,6 +1,8 @@
 body
 {
     background-color: #13111A;
+    font-family: "Zen Old Mincho N M";
+    letter-spacing: 1px;
 }
 
 header
@@ -29,12 +31,13 @@ header h1
     height: auto;
     box-shadow: 0 0 30px;
     transition-duration: 0.3s;
+    margin-bottom: 5%;
 }
 
 .arti p
 {
     text-align: left;
-    margin: 5% 10%;
+    margin: 3% 10%;
     color: #FFFFFF;
     font-size: 15px;
 }
